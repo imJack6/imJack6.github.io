@@ -1,0 +1,60 @@
+<local:MyCard Title="IP地址" Margin="0,0,0,15">
+    <StackPanel Margin="25,40,23,15">
+        <local:MyHint Margin="0,8,0,2" IsWarn="False"
+                   Text="进入“多人游戏”，若没找到本服务器，可手动输入服务器IP: JackCraft.cn 即可「如果连接失败请尝试备用IP: s1.JackCraft.cn:22201」" />
+    </StackPanel>
+</local:MyCard>
+    
+<local:MyCard Title="一键启动并加入服务器" Margin="0,0,0,15">
+    <StackPanel Margin="25,40,23,15">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <local:MyButton Margin="0,0,10,0" Width="150" Height="35"
+                    Text="进入 JackCraft (主IP)" EventType="启动游戏" EventData="JackCraft Client|JackCraft.cn" ToolTip="服务器 IP：JackCraft.cn" />
+            <local:MyButton Margin="0,0,10,0" Width="150" Height="35"
+                    Text="进入 JackCraft (备用IP)" EventType="启动游戏" EventData="JackCraft Client|s1.JackCraft.cn:22201" ToolTip="服务器 IP：s1.JackCraft.cn:22201" />
+        </StackPanel>
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="网站地址" Margin="0,0,0,15">
+    <StackPanel Margin="25,40,23,15">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                    Text="JackCraft总官网" EventType="打开网页" EventData="https://JackCraft.cn/" />
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                    Text="本服务器官网" EventType="打开网页" EventData="https://mc.JackCraft.cn/" />
+        </StackPanel>
+    </StackPanel>
+</local:MyCard>
+    
+<local:MyCard Title="QQ群" Margin="0,0,0,15">
+    <StackPanel Margin="25,40,23,15">
+        <local:MyHint Margin="0,0,0,7" IsWarn="False"
+                   Text="QQ群号: 457440575" />
+        <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="复制群号" EventType="复制文本" EventData="457440575" ToolTip="单击以复制QQ群号到剪贴板" />    
+    </StackPanel>
+</local:MyCard>
+    
+<local:MyCard Title="注意事项" Margin="0,0,0,15">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap"
+                   Text="1. 服务器目前支持 Java 版 Minecraft，以后可能会支持 BE 版 Minecraft！" />
+        <TextBlock TextWrapping="Wrap"
+                   Text="" />   
+        <TextBlock TextWrapping="Wrap"
+                   Text="2. 服务器目前玩法为粘液生存和粘液空岛，以后可能会增加更多玩法！" />
+        <TextBlock TextWrapping="Wrap"
+                   Text="" />   
+        <TextBlock TextWrapping="Wrap"
+                   Text="3. 服务器为商业服，但氪金味不重，平民玩家也可以强大起来！" />
+         <TextBlock TextWrapping="Wrap"
+                   Text="" />   
+        <TextBlock TextWrapping="Wrap"
+                   Text="5. 服务器长期开服，永久IP: JackCraft.cn，服务器每天均不停服自动备份一次！" />
+        <TextBlock TextWrapping="Wrap"
+                   Text="" />   
+        <TextBlock TextWrapping="Wrap"
+                   Text="6. 若发现服务器内出现BUG/恶意玩家等，欢迎反馈，发现者可根据事情严重性发放奖励！" />
+	</StackPanel>
+</local:MyCard>
