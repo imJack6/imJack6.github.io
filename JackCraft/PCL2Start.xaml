@@ -4,17 +4,6 @@
                    Text="进入“多人游戏”，若没找到本服务器，可手动输入服务器IP: JackCraft.cn 即可「如果连接失败请尝试备用IP: s1.JackCraft.cn:22201」" />
     </StackPanel>
 </local:MyCard>
-    
-<local:MyCard Title="一键启动并加入服务器" Margin="0,0,0,15">
-    <StackPanel Margin="25,40,23,15">
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-            <local:MyButton Margin="0,0,10,0" Width="150" Height="35"
-                    Text="进入 JackCraft (主IP)" EventType="启动游戏" EventData="JackCraft Client|JackCraft.cn" ToolTip="服务器 IP：JackCraft.cn" />
-            <local:MyButton Margin="0,0,10,0" Width="150" Height="35"
-                    Text="进入 JackCraft (备用IP)" EventType="启动游戏" EventData="JackCraft Client|s1.JackCraft.cn:22201" ToolTip="服务器 IP：s1.JackCraft.cn:22201" />
-        </StackPanel>
-    </StackPanel>
-</local:MyCard>
 
 <local:MyCard Title="网站地址" Margin="0,0,0,15">
     <StackPanel Margin="25,40,23,15">
@@ -31,8 +20,12 @@
     <StackPanel Margin="25,40,23,15">
         <local:MyHint Margin="0,0,0,7" IsWarn="False"
                    Text="QQ群号: 457440575" />
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
         <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
-                   Text="复制群号" EventType="复制文本" EventData="457440575" ToolTip="单击以复制QQ群号到剪贴板" />    
+                   Text="复制群号" EventType="复制文本" EventData="457440575" ToolTip="单击以复制QQ群号到剪贴板" /> 
+        <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="一键加群" EventType="打开网页" EventData="https://jq.qq.com/?_wv=1027&amp;k=7PoYsxuY" />
+        </StackPanel>
     </StackPanel>
 </local:MyCard>
     
